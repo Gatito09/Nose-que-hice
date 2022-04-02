@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        document.oncopy = event => {
+            event.preventDefault();
+            event.clipboardData.setData('text/plain','No te olvides que me tienes que enseñar a programar >:D \n')
+        }
+    </script>
+</head>
+<body>
+    <div class="cuadradito">
+        <div class="copiar">
+            <p>Copiame y pegame en cualquier lado :v</p>
+        </div>
+        
+        <br>
+        
+        <input type="text" placeholder="Pegalo aqui si quieres" id="texto">
+
+        <p id="descripcion">Y listo ta interesante el JavaScript</p>
+    </div>
+</body>
+</html>
